@@ -1,7 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+This is the demo site for [Guang](https://github.com/huiguangx).
 
-::github{repo="saicaca/fuwari"}
+::github{repo="huiguangx/notes"}
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
