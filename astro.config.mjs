@@ -18,6 +18,8 @@ import swup from '@swup/astro';
 import sitemap from '@astrojs/sitemap';
 import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import react from "@astrojs/react";
+import remarkToc from 'remark-toc';
+import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis';
 const oklchToHex = str => {
   const DEFAULT_HUE = 250;
   const regex = /-?\d+(\.\d+)?/g;
@@ -54,8 +56,8 @@ export default defineConfig({
     Image: false
   }), svelte(), sitemap(), react()],
   markdown: {
-    remarkPlugins: [remarkMath, remarkReadingTime, remarkDirective, parseDirectiveNode],
-    rehypePlugins: [rehypeKatex, rehypeSlug, [rehypeComponents, {
+    remarkPlugins: [remarkMath, remarkReadingTime, remarkDirective, parseDirectiveNode, remarkToc],
+    rehypePlugins: [rehypeKatex, rehypeSlug, rehypeAccessibleEmojis, [rehypeComponents, {
       components: {
         github: GithubCardComponent,
         note: (x, y) => AdmonitionComponent(x, y, "note"),
