@@ -164,3 +164,21 @@ $$I = \int \rho R^{2} dV$$
 
 And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+<!-- <Comments client:only="react" />s -->
+<!-- <div class=".giscus"></div>
+<script src="https://giscus.app/client.js"
+        data-repo="huiguangx/notes"
+        data-repo-id="R_kgDOL9Uurg"
+        data-category="[在此输入分类名]"
+        data-category-id="[在此输入分类 ID]"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script> -->
