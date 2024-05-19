@@ -41,14 +41,14 @@ const Comments = () => {
   }, [])
 
   return (
-    <div id={id} className="w-full">
+    <div>
       {mounted ? (
         <Giscus
           id={id}
-          repo="username/repo"
-          repoId="R_kgDOKeudTw"
+          repo="huiguangx/notes"
+          repoId="R_kgDOL9Uurg"
           category="Announcements"
-          categoryId="DIC_kwDOKeudT84Cch4W"
+          categoryId="DIC_kwDOL9Uurs4Cfc35"
           mapping="title"
           reactionsEnabled="1"
           emitMetadata="0"
